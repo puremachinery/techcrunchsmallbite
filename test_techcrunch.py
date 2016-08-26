@@ -44,8 +44,7 @@ def test_get_techcrunch_articles():
 def test_add_company_information():
     articles = [Article('title1', 'url1')]
     articles_with_company_info = tc.add_company_information(articles)
-    assert articles_with_company_info[0] == [tc.default_value,  # company name
-                                             tc.default_value,  # company url
-                                             'title1',  # article title
-                                             'url1']  # article url
-
+    assert articles_with_company_info[0] == ['title1',  # article title
+                                             'url1',  # article url
+                                             tc.default_value,  # company name
+                                             tc.default_value]  # company url
