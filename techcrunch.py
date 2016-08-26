@@ -89,7 +89,7 @@ def add_company_information(articles):
             company_name = get_company_name_from_techcrunch_article(html)
             company_website = get_company_website_from_techcrunch_article(html)
         article_info.append(
-            [company_name, company_website, article.title, article.url])
+            [article.title, article.url, company_name, company_website])
     return article_info
 
 
