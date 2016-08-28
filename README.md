@@ -11,4 +11,6 @@ If one wanted every article, a web spider should work, though appropriate valida
 links followed were TechCrunch articles and not other sorts of content would be needed in conjunction.
 
 If the program requirements continued to grow, one would split out functions into separate modules
-as appropriate (web io, processing, data storage, etc), though not necessary at the current level of complexity.
+as appropriate (web io, processing, data storage, etc), though that's not necessary at the current level of complexity.
+
+To run the tests, pip install pytest, then "py.test" at the command line and all test files in the current directory and subdirectories will be found via pattern-matching and run.
